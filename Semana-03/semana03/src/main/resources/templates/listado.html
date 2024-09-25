@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Listado de Estudiantes</h1>
+<table>
+	<tr>
+		<th>ID </th>
+		<th>Nombre </th>
+		<th>Apellido </th>
+		<th>Telefono </th>
+		<th>Correo </th>
+	</tr>
+	<tr th:each="est:${listarEstudiantes}">
+		<td th:text="${est.idEstudiante}">
+		
+		</td>
+		<td th:text="${est.nombre}">
+		
+		</td>
+		<td th:text="${est.apellido}">
+		
+		</td>
+		<td th:text="${est.telefono}">
+		
+		</td>
+		<td th:text="${est.correo}">
+		
+		</td>
+	</tr>
+
+</table>
+
+
+</body>
+</html>
